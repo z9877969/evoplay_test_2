@@ -23,10 +23,9 @@
   }
 }
 
-.benefits__heading {
-  @include media(desktop) {
+@include media(desktop) {
+  .benefits__heading {
     width: 550px;
-    margin: 0;
   }
 }
 
