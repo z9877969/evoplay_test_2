@@ -53,6 +53,6 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/',
+    base: '/cookie-crunch-classic',
   };
 });
