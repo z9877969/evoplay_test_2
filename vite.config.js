@@ -4,6 +4,7 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
+import svgSpritePlugin from 'vite-plugin-svg-sprite';
 
 export default defineConfig(({ command }) => {
   return {
@@ -45,6 +46,10 @@ export default defineConfig(({ command }) => {
           quality: 60,
         },
       }),
+      svgSpritePlugin({
+        include: '/src/img/svg/symbol-defs.svg',
+        symbolId: 'icon-[name]',
+      }),
     ],
     css: {
       preprocessorOptions: {
@@ -53,6 +58,8 @@ export default defineConfig(({ command }) => {
         },
       },
     },
-    base: '/',
+
+    base: '/vanilla-vite-template',
+
   };
 });

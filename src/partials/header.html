@@ -1,5 +1,15 @@
 <header class="header">
-  <div class="container">
+  <div class="header_container">
+    <div class="header_content">
+      <img
+        class="header_image"
+        src="image 13.jpg"
+        alt="headerIMg"
+        width="62"
+        height="62"
+      />
+      <h2 class="header_game_title">Cookie Crunch Classic</h2>
+    </div>
     <ul class="menu">
       <li><a class="menuItem" href="#">Home</a></li>
       <li><a class="menuItem" href="#">Benefits</a></li>
@@ -9,7 +19,14 @@
       <li><a class="menuItem" href="#">Advantages</a></li>
       <li><a class="menuItem" href="#">Gallery</a></li>
     </ul>
+
     <button class="hamburger" onclick="toggleMenu()">
+      <!-- <svg class="menuIcon" width="20" height="20">
+        <use href="#icon-icon-burger"></use>
+      </svg>
+      <svg class="closeIcon" width="20" height="20">
+        <use href="#icon-icon-cross"></use>
+      </svg> -->
       <svg
         class="menuIcon"
         xmlns="http://www.w3.org/2000/svg"
@@ -26,12 +43,11 @@
         />
       </svg>
       <svg
-        class="closeIcon"
+        class="closeIcon hidden"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         width="24"
         height="24"
-        style="display: none"
       >
         <path
           d="M6 18L18 6M6 6l12 12"
@@ -42,6 +58,9 @@
         />
       </svg>
     </button>
+    <div class="overlay hidden"></div>
+    <div></div>
+
+    <script type="module" src="../JS/burger.js"></script>
   </div>
 </header>
-<script type="module" src="../JS/burger.js"></script>
