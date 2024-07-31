@@ -44,7 +44,7 @@
   justify-content: center;
   max-width: 310px;
   @include media(desktop) {
-    margin-top: 94px;
+    margin-top: 124px;
     // margin-left: 87px;
     // margin-right: 72px;
     gap: 340px;
@@ -119,6 +119,9 @@
   top: 200px;
   filter: blur(80px);
   background: rgb(157, 36, 96);
+  @include media(desktop) {
+    bottom: 0px;
+  }
 }
 .elipse_2 {
   /* Ellipse 4 */
