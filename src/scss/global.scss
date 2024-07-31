@@ -5,4 +5,5 @@ h2 {
   @include media(desktop) {
     @include font(64, 88);
   }
+  margin-bottom: 32px;
 }

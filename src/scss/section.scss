@@ -5,5 +5,19 @@ section {
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
+
+    // ? Temporary
+    max-width: 1440px;
+    margin: 0 auto;
+    // ? Temporary
   }
 }
+
+// ? Temporary
+@include media(desktop) {
+  header {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+// ? Temporary
