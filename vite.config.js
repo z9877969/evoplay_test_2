@@ -59,6 +59,6 @@ export default defineConfig(({ command }) => {
       },
     },
 
-    base: '/cookie-crunch-classic',
+    base: '/evoplay_test_2',
   };
 });
